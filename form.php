@@ -19,7 +19,7 @@
     <label for="address">住所：</label>
     <input type="text" id="address" name="address">
     <label for="question">質問：</label>
-    <input type="text" id="question" name="question">
+    <textarea id="question" name="question"></textarea>
     <label for="gender">性別：</label>
     <select id="gender" name="gender">
         <option value="male">男性</option>

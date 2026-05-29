@@ -41,16 +41,17 @@
     }
     echo "<a href='form.php'>戻る</a>";
   } else {
-    echo "<p>名前：{$name}</p>";
-    echo "<p>年齢：{$age}</p>";
-    echo "<p>電話番号：{$phone}</p>";
-    echo "<p>メールアドレス：{$email}</p>";
-    echo "<p>住所：{$address}</p>";
-    echo "<p>質問：{$question}</p>";
-    echo "<p>性別：{$gender}</p>";
+    echo "<p>名前：".htmlspecialchars($name)."</p>";
+    echo "<p>年齢：".htmlspecialchars($age)."</p>";
+    echo "<p>電話番号：".htmlspecialchars($phone)."</p>";
+    echo "<p>メールアドレス：".htmlspecialchars($email)."</p>";
+    echo "<p>住所：".htmlspecialchars($address)."</p>";
+    echo "<p>質問：".htmlspecialchars($question)."</p>";
+    echo "<p>性別：".htmlspecialchars($gender)."</p>";
   }
 } else {
     echo "<p>データがありません</p>";
 }
   ?>
+</body>
 </html>
