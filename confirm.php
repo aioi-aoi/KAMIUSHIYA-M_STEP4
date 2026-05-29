@@ -26,7 +26,7 @@
   if(!is_numeric($age) || $age < 0 || $age > 150){
     $errors[] = "年齢は0から150の間で入力してください。";
   }
-if(!preg_match("/^[0-9-]+$/", $phone)){
+  if(!preg_match("/^[0-9-]+$/", $phone)){
     $errors[] = "電話番号は半角数字とハイフンのみで入力してください。";
   }
   if(!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $email)){
@@ -35,7 +35,7 @@ if(!preg_match("/^[0-9-]+$/", $phone)){
   if(!preg_match("/^[ぁ-んァ-ヶ一-龠a-zA-Z0-9-]+$/u", $address)){
     $errors[] = "住所はひらがな、カタカナ、漢字、英字、半角数字、ハイフンのみで入力してください。";
   }
-if(!empty($errors)){
+  if(!empty($errors)){
     foreach($errors as $error){
         echo "<p style='color:red;'>{$error}</p>";
     }
